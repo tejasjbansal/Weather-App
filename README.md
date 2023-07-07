@@ -1,4 +1,4 @@
-# Weather-App# weather-app Project structure
+# weather-app Project structure
 
 In this project you build a end-to-end pipeline from requesting weather data from an API to visualizing the results on a Dashboard.
 As tools we use the weather api, Docker, AWS Elastic container registry, AWS Lambda, AWS EventBridge and Grafana as the dashboard solution.
