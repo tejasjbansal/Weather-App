@@ -7,7 +7,7 @@ import taosrest
 def get_weather(location, conn):
 
     # Create your key and replace mine with it
-    payload = {'Key': '4e5edcfc265646ad898200007230707', 'q': location, 'aqi': 'yes'}
+    payload = {'Key': '', 'q': location, 'aqi': 'yes'}
     r = requests.get("http://api.weatherapi.com/v1/current.json", params=payload)
 
     # Get the json from the request's result
@@ -38,7 +38,7 @@ def open_con():
     # Open a connection to tdengine cloud. Use the url and token specified in the instance
     try:
         conn = taosrest.connect(url="https://gw.us-east-1.aws.cloud.tdengine.com",
-                    token="cdc4f12a504eaf7176907cdcd60f63e7854beca8"
+                    token=""
                     )
  
     except taosrest.Error as e:
